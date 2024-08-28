@@ -3,7 +3,7 @@ name: Node.js CI/CD
 on:
   push:
     branches:
-      - main
+      - main_old
 
 jobs:
   build-and-deploy:
