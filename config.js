@@ -1,10 +1,12 @@
+require("dotenv").config();
+
 const config = {
-  user: "your_username",
-  password: "your_password",
-  server: "your_server.database.windows.net",
-  database: "your_database",
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  server: process.env.DB_SERVER,
+  database: process.env.DB_DATABASE,
   options: {
-    encrypt: true, // Use encryption
+    encrypt: true,
     enableArithAbort: true,
   },
 };

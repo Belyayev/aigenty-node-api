@@ -7,7 +7,7 @@ async function getData() {
     let pool = await sql.connect(config);
 
     // Query the database
-    let result = await pool.request().query("SELECT * FROM your_table");
+    let result = await pool.request().query("SELECT * FROM Properties");
 
     console.log(result.recordset);
 
